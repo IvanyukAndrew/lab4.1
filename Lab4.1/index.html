@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebNews</title>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="./app.js" defer></script>
+    <style>
+    td{
+        border: 6px groove rgb(0, 255, 136);
+    }
+    th{
+        border: 10px groove rgb(7, 102, 65);
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <legend><strong><h3>Додати машину</h3></strong></legend>
+            <label for="number"> Номера: </label>
+            <input type="number" id="number" placeholder=""> <br><br>
+
+            <label for="mark"> Марка машини: </label>
+            <input type="text" id="mark" placeholder=""> <br><br>
+
+            <label for="color"> Колір: </label>
+            <input id="color" placeholder=""></input> <br><br>
+
+            <label for="date"> Рік виготовлення: </label>
+            <input type="date" id="date" placeholder=""> <br><br>
+
+            <label for="volume"> Обєм двигуна: </label>
+            <input type="number" min="1" id="volume" placeholder=""> <br><br>
+            <button type="submit"  id="btn" onclick="t1.addItem()"> Створити </button> <br><br>
+            <p id="test"></p>
+    </form>
+</body>
+</html>
